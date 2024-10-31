@@ -12,7 +12,7 @@ namespace Actividad2
         public int Estrato { get; set; }
         public double valorMatricula { get; set; }
         public double Descuento {  get; set; }
-        public int Bono {  get; set; }  
+        public double Bono {  get; set; }  
 
         public void Inscripcion()
         {
@@ -30,11 +30,14 @@ namespace Actividad2
             switch (Estrato) {
                 case 1:
                     Descuento = valorMatricula * 0.80;
-                    Console.WriteLine($"Tiene un descuento por valor de {Descuento}");
+                    Bono = 200000;
+                    Console.WriteLine($"Tiene un descuento por valor de {Descuento}\n El bono de alimentación al que tiene derecho es de {Bono}");
+                    
                     break;
                 case 2:
+                    Bono = 100000;
                     Descuento = valorMatricula * 0.50;
-                    Console.WriteLine($"Tiene un descuento por valor de {Descuento}");
+                    Console.WriteLine($"Tiene un descuento por valor de {Descuento}\n El bono de alimentación al que tiene derecho es de {Bono});
                     break;
                 case 3:
                     Descuento = valorMatricula * 0.50;
