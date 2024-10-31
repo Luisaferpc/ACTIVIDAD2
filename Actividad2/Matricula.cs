@@ -37,14 +37,14 @@ namespace Actividad2
                 case 2:
                     Bono = 100000;
                     Descuento = valorMatricula * 0.50;
-                    Console.WriteLine($"Tiene un descuento por valor de {Descuento}\n El bono de alimentación al que tiene derecho es de {Bono});
+                    Console.WriteLine($"Tiene un descuento por valor de {Descuento}\n El bono de alimentación al que tiene derecho es de {Bono}");
                     break;
                 case 3:
                     Descuento = valorMatricula * 0.50;
                     Console.WriteLine($"Tiene un descuento por valor de {Descuento}");
                     break;
-
-            }
+                }
+            Console.WriteLine($"Señor(a) {Nombre} el total a pagar de su matricula es de {valorMatricula-Descuento}");
 
 
         }

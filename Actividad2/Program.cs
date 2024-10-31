@@ -4,7 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        int totalPagar;
+        string respuesta;
         bool confirmar = true;
 
     Matricula factura = new Matricula();
@@ -12,6 +12,13 @@ public class Program
         do {
             factura.Inscripcion();
             factura.Liquidacion();
+            Console.WriteLine("Desea matricular otro estudiante? (s/n): ");
+            respuesta = Console.ReadLine();
+            if (respuesta == "n")
+            {
+                confirmar = false;
+                Console.WriteLine("Su matricula ha terminado!");
+            }
 
 
         }while( confirmar );
