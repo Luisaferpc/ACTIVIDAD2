@@ -40,7 +40,7 @@ namespace Actividad2
                     Console.WriteLine($"Tiene un descuento por valor de {Descuento}\n El bono de alimentación al que tiene derecho es de {Bono}");
                     break;
                 case 3:
-                    Descuento = valorMatricula * 0.50;
+                    Descuento = valorMatricula * 0.30;
                     Console.WriteLine($"Tiene un descuento por valor de {Descuento}");
                     break;
                 }
